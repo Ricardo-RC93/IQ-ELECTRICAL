@@ -234,7 +234,7 @@ const About = () => {
               Get Free Quote
             </button>
             <button className="border-2 border-gray-300 hover:bg-gray-300 hover:text-slate-900 text-gray-300 font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-all transform hover:scale-105">
-              Call (555) 123-4567
+              Call +1 (212) 696-0824
             </button>
           </div>
         </div>

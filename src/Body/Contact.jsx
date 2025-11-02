@@ -75,10 +75,10 @@ const Contact = () => {
                     Phone
                   </h4>
                   <p className="text-gray-300 text-xs md:text-sm">
-                    (555) 123-4567
+                    +1 (212) 696-0824
                   </p>
                   <p className="text-gray-300 font-semibold text-xs md:text-sm mt-1">
-                    Emergency: (555) 911-ELEC
+                    Emergency: +1 (212) 696-0824
                   </p>
                 </div>
 
@@ -176,7 +176,7 @@ const Contact = () => {
                 issues and ensure your safety.
               </p>
               <button className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm md:text-base">
-                Call Emergency Line: (555) 911-ELEC
+                Call Emergency Line: +1 (212) 696-0824
               </button>
             </div>
           </div>

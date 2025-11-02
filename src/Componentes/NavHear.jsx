@@ -64,7 +64,9 @@ const NavHeader = () => {
           <div className="hidden md:flex items-center space-x-4">
             <div className="text-right">
               <p className="text-sm text-gray-300">Emergency 24/7</p>
-              <p className="text-lg font-bold text-red-600">(555) 911-ELEC</p>
+              <p className="text-lg font-bold text-red-600">
+                +1 (212) 696-0824
+              </p>
             </div>
             <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg transition-colors">
               Emergency
@@ -131,7 +133,9 @@ const NavHeader = () => {
               </button>
               <div className="px-3 py-2 border-t border-slate-700 mt-2">
                 <p className="text-sm text-gray-300">Emergency 24/7</p>
-                <p className="text-lg font-bold text-red-600">(555) 911-ELEC</p>
+                <p className="text-lg font-bold text-red-600">
+                  +1 (212) 696-0824
+                </p>
                 <button className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg mt-2 transition-colors">
                   Emergency
                 </button>

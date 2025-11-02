@@ -222,7 +222,9 @@ const Services = () => {
               <p className="text-base md:text-lg font-semibold">
                 Call Emergency Line:
               </p>
-              <p className="text-2xl md:text-3xl font-bold">(555) 911-ELEC</p>
+              <p className="text-2xl md:text-3xl font-bold">
+                +1 (212) 696-0824
+              </p>
             </div>
             <button className="w-full sm:w-auto bg-red-600 text-white hover:bg-red-700 font-bold py-3 px-6 md:px-8 rounded-lg transition-colors">
               Call Now
