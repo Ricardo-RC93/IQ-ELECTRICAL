@@ -155,11 +155,16 @@ const Services = () => {
               className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg shadow-lg border border-slate-700 hover:border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 transition-all duration-300 overflow-hidden"
             >
               {/* Service Image */}
-              <div className="h-48 bg-gray-200 overflow-hidden">
+              <div className="h-48 overflow-hidden bg-slate-800">
                 <img
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                  onError={(e) => {
+                    e.target.style.display = "none";
+                    e.target.parentElement.style.backgroundColor = "#1e293b";
+                  }}
                 />
               </div>
 
