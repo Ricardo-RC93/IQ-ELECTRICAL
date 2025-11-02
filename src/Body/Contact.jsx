@@ -34,36 +34,36 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="py-16 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
+      className="py-12 md:py-16 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
     >
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl lg:text-5xl font-bold text-white mb-4">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Get In Touch
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-base md:text-xl text-gray-300 max-w-3xl mx-auto px-4">
             Ready to start your electrical project? Contact us today for a free
             consultation and quote. We're here to help with all your electrical
             needs.
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
           {/* Contact Information */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-white mb-6">
+              <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
                 Contact Information
               </h3>
 
-              <div className="grid grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 {/* Phone */}
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
-                  <div className="flex justify-center mb-3">
-                    <div className="bg-blue-600 text-white p-3 rounded-lg">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 md:p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
+                  <div className="flex justify-center mb-2 md:mb-3">
+                    <div className="bg-blue-600 text-white p-2 md:p-3 rounded-lg">
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -71,21 +71,23 @@ const Contact = () => {
                       </svg>
                     </div>
                   </div>
-                  <h4 className="text-lg font-semibold text-white mb-2">
+                  <h4 className="text-base md:text-lg font-semibold text-white mb-2">
                     Phone
                   </h4>
-                  <p className="text-gray-300 text-sm">(555) 123-4567</p>
-                  <p className="text-gray-300 font-semibold text-sm mt-1">
+                  <p className="text-gray-300 text-xs md:text-sm">
+                    (555) 123-4567
+                  </p>
+                  <p className="text-gray-300 font-semibold text-xs md:text-sm mt-1">
                     Emergency: (555) 911-ELEC
                   </p>
                 </div>
 
                 {/* Email */}
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
-                  <div className="flex justify-center mb-3">
-                    <div className="bg-blue-600 text-white p-3 rounded-lg">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 md:p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
+                  <div className="flex justify-center mb-2 md:mb-3">
+                    <div className="bg-blue-600 text-white p-2 md:p-3 rounded-lg">
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -94,21 +96,23 @@ const Contact = () => {
                       </svg>
                     </div>
                   </div>
-                  <h4 className="text-lg font-semibold text-white mb-2">
+                  <h4 className="text-base md:text-lg font-semibold text-white mb-2">
                     Email
                   </h4>
-                  <p className="text-gray-300 text-sm">info@iqelectrical.com</p>
-                  <p className="text-gray-300 font-semibold text-sm mt-1">
+                  <p className="text-gray-300 text-xs md:text-sm">
+                    info@iqelectrical.com
+                  </p>
+                  <p className="text-gray-300 font-semibold text-xs md:text-sm mt-1">
                     emergency@iqelectrical.com
                   </p>
                 </div>
 
                 {/* Location */}
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
-                  <div className="flex justify-center mb-3">
-                    <div className="bg-blue-600 text-white p-3 rounded-lg">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 md:p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
+                  <div className="flex justify-center mb-2 md:mb-3">
+                    <div className="bg-blue-600 text-white p-2 md:p-3 rounded-lg">
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -120,21 +124,23 @@ const Contact = () => {
                       </svg>
                     </div>
                   </div>
-                  <h4 className="text-lg font-semibold text-white mb-2">
+                  <h4 className="text-base md:text-lg font-semibold text-white mb-2">
                     Location
                   </h4>
-                  <p className="text-gray-300 text-sm">123 Electric Avenue</p>
-                  <p className="text-gray-300 text-sm">
+                  <p className="text-gray-300 text-xs md:text-sm">
+                    123 Electric Avenue
+                  </p>
+                  <p className="text-gray-300 text-xs md:text-sm">
                     Your City, State 12345
                   </p>
                 </div>
 
                 {/* Hours */}
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
-                  <div className="flex justify-center mb-3">
-                    <div className="bg-blue-600 text-white p-3 rounded-lg">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 md:p-6 border border-gray-600 hover:border-blue-500 transition-all duration-300 text-center">
+                  <div className="flex justify-center mb-2 md:mb-3">
+                    <div className="bg-blue-600 text-white p-2 md:p-3 rounded-lg">
                       <svg
-                        className="w-6 h-6"
+                        className="w-5 h-5 md:w-6 md:h-6"
                         fill="currentColor"
                         viewBox="0 0 20 20"
                       >
@@ -146,11 +152,13 @@ const Contact = () => {
                       </svg>
                     </div>
                   </div>
-                  <h4 className="text-lg font-semibold text-white mb-2">
+                  <h4 className="text-base md:text-lg font-semibold text-white mb-2">
                     Hours
                   </h4>
-                  <p className="text-gray-300 text-sm">Mon-Fri: 7AM-6PM</p>
-                  <p className="text-gray-300 font-semibold text-sm mt-1">
+                  <p className="text-gray-300 text-xs md:text-sm">
+                    Mon-Fri: 7AM-6PM
+                  </p>
+                  <p className="text-gray-300 font-semibold text-xs md:text-sm mt-1">
                     Emergency: 24/7
                   </p>
                 </div>
@@ -158,29 +166,29 @@ const Contact = () => {
             </div>
 
             {/* Emergency Service */}
-            <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg text-white p-6 border border-gray-600">
-              <h4 className="text-xl font-bold mb-3">
+            <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg text-white p-4 md:p-6 border border-gray-600">
+              <h4 className="text-lg md:text-xl font-bold mb-3">
                 Emergency Service Available
               </h4>
-              <p className="mb-4 text-gray-300">
+              <p className="mb-4 text-sm md:text-base text-gray-300">
                 Electrical emergencies can happen anytime. Our certified
                 electricians are available 24/7 to handle urgent electrical
                 issues and ensure your safety.
               </p>
-              <button className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-base">
+              <button className="w-full bg-red-600 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded-lg transition-colors text-sm md:text-base">
                 Call Emergency Line: (555) 911-ELEC
               </button>
             </div>
           </div>
 
           {/* Contact Form */}
-          <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg shadow-lg p-8 border border-slate-700 hover:border-blue-500 hover:shadow-blue-500/20 transition-all duration-300">
-            <h3 className="text-2xl font-bold text-white mb-6">
+          <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg shadow-lg p-6 md:p-8 border border-slate-700 hover:border-blue-500 hover:shadow-blue-500/20 transition-all duration-300">
+            <h3 className="text-xl md:text-2xl font-bold text-white mb-4 md:mb-6">
               Request a Quote
             </h3>
 
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid md:grid-cols-2 gap-6">
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
+              <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                 <div>
                   <label
                     htmlFor="name"
@@ -283,7 +291,7 @@ const Contact = () => {
 
               <button
                 type="submit"
-                className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-4 px-6 rounded-lg transition-colors flex items-center justify-center"
+                className="w-full bg-blue-900 hover:bg-blue-800 text-white font-bold py-3 md:py-4 px-4 md:px-6 rounded-lg transition-colors flex items-center justify-center text-sm md:text-base"
               >
                 <svg
                   className="w-5 h-5 mr-2"

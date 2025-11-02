@@ -133,16 +133,16 @@ const About = () => {
   return (
     <section
       id="about"
-      className="py-16 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
+      className="py-12 md:py-16 bg-linear-to-br from-slate-900 via-slate-800 to-slate-900"
     >
       <div className="container mx-auto px-4">
-        <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12 md:mb-16">
           {/* Left Content */}
           <div>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
               About IQ ELECTRICAL
             </h2>
-            <div className="space-y-4 text-lg text-gray-300">
+            <div className="space-y-3 md:space-y-4 text-base md:text-lg text-gray-300">
               <p>
                 For over 15 years, IQ ELECTRICAL has been the trusted electrical
                 contractor for residential, commercial, and industrial clients.
@@ -176,60 +176,64 @@ const About = () => {
         </div>
 
         {/* Stats Section */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-8 mb-12 md:mb-16">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center bg-slate-700 rounded-lg p-6 hover:bg-gray-200 transition-colors"
+              className="text-center bg-slate-700 rounded-lg p-4 md:p-6 hover:bg-gray-200 transition-colors"
             >
-              <div className="text-blue-600 flex justify-center mb-4">
+              <div className="text-blue-600 flex justify-center mb-3 md:mb-4">
                 {stat.icon}
               </div>
-              <div className="text-3xl lg:text-4xl font-bold text-white mb-2">
+              <div className="text-2xl md:text-3xl lg:text-4xl font-bold text-white mb-2">
                 {stat.number}
               </div>
-              <div className="text-gray-300 font-medium">{stat.label}</div>
+              <div className="text-sm md:text-base text-gray-300 font-medium">
+                {stat.label}
+              </div>
             </div>
           ))}
         </div>
 
         {/* Certifications Section */}
         <div>
-          <h3 className="text-3xl font-bold text-center text-white mb-12">
+          <h3 className="text-2xl md:text-3xl font-bold text-center text-white mb-8 md:mb-12">
             Certifications & Credentials
           </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
             {certifications.map((cert, index) => (
               <div
                 key={index}
-                className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-6 text-center border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
+                className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 md:p-6 text-center border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300"
               >
-                <div className="text-blue-600 flex justify-center mb-4">
+                <div className="text-blue-600 flex justify-center mb-3 md:mb-4">
                   {cert.icon}
                 </div>
-                <h4 className="text-xl font-bold text-white mb-2">
+                <h4 className="text-lg md:text-xl font-bold text-white mb-2">
                   {cert.title}
                 </h4>
-                <p className="text-gray-300">{cert.description}</p>
+                <p className="text-sm md:text-base text-gray-300">
+                  {cert.description}
+                </p>
               </div>
             ))}
           </div>
         </div>
 
         {/* Call to Action */}
-        <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg text-white p-8 text-center mt-16 border border-gray-600">
-          <h3 className="text-3xl font-bold mb-4">
+        <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg text-white p-6 md:p-8 text-center mt-12 md:mt-16 border border-gray-600">
+          <h3 className="text-2xl md:text-3xl font-bold mb-3 md:mb-4">
             15+ Years Serving Our Community
           </h3>
-          <p className="text-xl mb-6 text-gray-300">
+          <p className="text-base md:text-xl mb-4 md:mb-6 text-gray-300">
             Trust the experts at IQ ELECTRICAL for all your electrical needs.
             Licensed, insured, and committed to excellence.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-gray-700 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+            <button className="bg-gray-700 hover:bg-blue-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-all transform hover:scale-105 shadow-lg">
               Get Free Quote
             </button>
-            <button className="border-2 border-gray-300 hover:bg-gray-300 hover:text-slate-900 text-gray-300 font-bold py-4 px-8 rounded-lg transition-all transform hover:scale-105">
+            <button className="border-2 border-gray-300 hover:bg-gray-300 hover:text-slate-900 text-gray-300 font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg transition-all transform hover:scale-105">
               Call (555) 123-4567
             </button>
           </div>

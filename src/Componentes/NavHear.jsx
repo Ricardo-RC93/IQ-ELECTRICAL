@@ -74,7 +74,7 @@ const NavHeader = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden text-gray-700 hover:text-orange-600 focus:outline-none"
+            className="md:hidden text-white hover:text-blue-400 focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -103,38 +103,36 @@ const NavHeader = () => {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden bg-gray-800 border-t border-gray-700">
+          <div className="md:hidden bg-slate-800 border-t border-slate-700">
             <div className="px-2 pt-2 pb-3 space-y-1">
               <button
                 onClick={() => scrollToSection("hero")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-orange-600 hover:bg-gray-700 rounded-md transition-colors"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 hover:bg-slate-700 rounded-md transition-colors"
               >
                 Home
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-orange-600 hover:bg-gray-700 rounded-md transition-colors"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 hover:bg-slate-700 rounded-md transition-colors"
               >
                 Services
               </button>
               <button
                 onClick={() => scrollToSection("about")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-orange-600 hover:bg-gray-700 rounded-md transition-colors"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 hover:bg-slate-700 rounded-md transition-colors"
               >
                 About
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="block w-full text-left px-3 py-2 text-gray-700 hover:text-orange-600 hover:bg-gray-700 rounded-md transition-colors"
+                className="block w-full text-left px-3 py-2 text-gray-300 hover:text-blue-400 hover:bg-slate-700 rounded-md transition-colors"
               >
                 Contact
               </button>
-              <div className="px-3 py-2 border-t border-gray-700 mt-2">
+              <div className="px-3 py-2 border-t border-slate-700 mt-2">
                 <p className="text-sm text-gray-300">Emergency 24/7</p>
-                <p className="text-lg font-bold text-orange-600">
-                  (555) 911-ELEC
-                </p>
-                <button className="bg-orange-500 hover:bg-orange-600 text-gray-900 font-bold py-2 px-4 rounded-lg mt-2 transition-colors">
+                <p className="text-lg font-bold text-red-600">(555) 911-ELEC</p>
+                <button className="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-4 rounded-lg mt-2 transition-colors">
                   Emergency
                 </button>
               </div>

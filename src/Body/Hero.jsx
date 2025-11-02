@@ -2,16 +2,16 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-      <div className="container mx-auto px-4 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+    <div className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white pt-20 md:pt-24">
+      <div className="container mx-auto px-4 py-12 md:py-16 lg:py-24">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-6 md:space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold leading-tight">
                 Professional Electrical Solutions
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-300">
+              <p className="text-lg md:text-xl lg:text-2xl text-gray-300">
                 Licensed, insured, and trusted electrical contractor serving
                 residential, commercial, and industrial clients. Available 24/7
                 for emergency repairs.
@@ -19,21 +19,21 @@ const Hero = () => {
             </div>
 
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-gray-700 hover:bg-blue-600 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105 shadow-lg">
+            <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
+              <button className="bg-gray-700 hover:bg-blue-600 text-white font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg text-base md:text-lg transition-all transform hover:scale-105 shadow-lg">
                 Get Free Quote
               </button>
-              <button className="border-2 border-gray-300 hover:bg-gray-300 hover:text-slate-900 text-gray-300 font-bold py-4 px-8 rounded-lg text-lg transition-all transform hover:scale-105">
+              <button className="border-2 border-gray-300 hover:bg-gray-300 hover:text-slate-900 text-gray-300 font-bold py-3 md:py-4 px-6 md:px-8 rounded-lg text-base md:text-lg transition-all transform hover:scale-105">
                 Call Now: (555) 123-4567
               </button>
             </div>
 
             {/* Key Features */}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 pt-8">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 pt-6 md:pt-8">
               <div className="text-center">
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-3 md:p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
                   <svg
-                    className="w-8 h-8 mx-auto text-blue-400"
+                    className="w-6 h-6 md:w-8 md:h-8 mx-auto text-blue-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -44,13 +44,15 @@ const Hero = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-semibold">Licensed & Insured</h3>
+                <h3 className="text-xs md:text-sm font-semibold">
+                  Licensed & Insured
+                </h3>
               </div>
 
               <div className="text-center">
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-3 md:p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
                   <svg
-                    className="w-8 h-8 mx-auto text-blue-400"
+                    className="w-6 h-6 md:w-8 md:h-8 mx-auto text-blue-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -61,26 +63,30 @@ const Hero = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-semibold">24/7 Emergency</h3>
+                <h3 className="text-xs md:text-sm font-semibold">
+                  24/7 Emergency
+                </h3>
               </div>
 
               <div className="text-center">
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-3 md:p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
                   <svg
-                    className="w-8 h-8 mx-auto text-blue-400"
+                    className="w-6 h-6 md:w-8 md:h-8 mx-auto text-blue-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
                     <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
                 </div>
-                <h3 className="text-sm font-semibold">15+ Years Experience</h3>
+                <h3 className="text-xs md:text-sm font-semibold">
+                  15+ Years Experience
+                </h3>
               </div>
 
               <div className="text-center">
-                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
+                <div className="bg-linear-to-br from-gray-700 via-gray-800 to-gray-700 rounded-lg p-3 md:p-4 mb-2 border border-slate-700 hover:border-blue-500 hover:shadow-lg hover:shadow-blue-500/20 transition-all duration-300">
                   <svg
-                    className="w-8 h-8 mx-auto text-blue-400"
+                    className="w-6 h-6 md:w-8 md:h-8 mx-auto text-blue-400"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -91,7 +97,9 @@ const Hero = () => {
                     />
                   </svg>
                 </div>
-                <h3 className="text-sm font-semibold">Fast Response</h3>
+                <h3 className="text-xs md:text-sm font-semibold">
+                  Fast Response
+                </h3>
               </div>
             </div>
           </div>

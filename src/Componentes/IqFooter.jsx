@@ -10,14 +10,14 @@ const IqFooter = () => {
 
   return (
     <footer className="bg-linear-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="container mx-auto px-4 py-8 md:py-12">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
+            <div className="flex items-center space-x-2 mb-3 md:mb-4">
               <div className="bg-blue-600 text-white p-2 rounded-lg">
                 <svg
-                  className="w-8 h-8"
+                  className="w-6 h-6 md:w-8 md:h-8"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -25,10 +25,10 @@ const IqFooter = () => {
                 </svg>
               </div>
               <div>
-                <h3 className="text-xl font-bold">IQ ELECTRICAL</h3>
+                <h3 className="text-lg md:text-xl font-bold">IQ ELECTRICAL</h3>
               </div>
             </div>
-            <p className="text-gray-300 mb-4">
+            <p className="text-sm md:text-base text-gray-300 mb-3 md:mb-4">
               Professional electrical contractor serving residential,
               commercial, and industrial clients for over 15 years. Licensed,
               insured, and available 24/7 for emergencies.
@@ -36,28 +36,30 @@ const IqFooter = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2">
                 <svg
-                  className="w-5 h-5 text-blue-400"
+                  className="w-4 h-4 md:w-5 md:h-5 text-blue-400 shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
                   <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                 </svg>
-                <span>(555) 123-4567</span>
+                <span className="text-sm md:text-base">(555) 123-4567</span>
               </div>
               <div className="flex items-center space-x-2">
                 <svg
-                  className="w-5 h-5 text-blue-400"
+                  className="w-4 h-4 md:w-5 md:h-5 text-blue-400 shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
                   <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                   <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                 </svg>
-                <span>info@iqelectrical.com</span>
+                <span className="text-sm md:text-base">
+                  info@iqelectrical.com
+                </span>
               </div>
               <div className="flex items-center space-x-2">
                 <svg
-                  className="w-5 h-5 text-blue-400"
+                  className="w-4 h-4 md:w-5 md:h-5 text-blue-400 shrink-0"
                   fill="currentColor"
                   viewBox="0 0 20 20"
                 >
@@ -67,15 +69,19 @@ const IqFooter = () => {
                     clipRule="evenodd"
                   />
                 </svg>
-                <span>123 Electric Avenue, Your City, State 12345</span>
+                <span className="text-sm md:text-base">
+                  123 Electric Avenue, Your City, State 12345
+                </span>
               </div>
             </div>
           </div>
 
           {/* Our Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Our Services</h4>
-            <ul className="space-y-2 text-gray-300">
+            <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4">
+              Our Services
+            </h4>
+            <ul className="space-y-2 text-gray-300 text-sm md:text-base">
               <li>
                 <button
                   onClick={() => scrollToSection("services")}
@@ -129,8 +135,10 @@ const IqFooter = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2 text-gray-300">
+            <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4">
+              Quick Links
+            </h4>
+            <ul className="space-y-2 text-gray-300 text-sm md:text-base">
               <li>
                 <button
                   onClick={() => scrollToSection("hero")}
@@ -181,18 +189,26 @@ const IqFooter = () => {
 
           {/* Emergency Service */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Emergency Service</h4>
-            <div className="bg-red-600 rounded-lg p-4 mb-4">
-              <h5 className="font-semibold mb-2">24/7 Available</h5>
-              <p className="text-sm mb-3">Electrical emergencies don't wait</p>
+            <h4 className="text-base md:text-lg font-semibold mb-3 md:mb-4">
+              Emergency Service
+            </h4>
+            <div className="bg-red-600 rounded-lg p-3 md:p-4 mb-3 md:mb-4">
+              <h5 className="font-semibold mb-2 text-sm md:text-base">
+                24/7 Available
+              </h5>
+              <p className="text-xs md:text-sm mb-2 md:mb-3">
+                Electrical emergencies don't wait
+              </p>
               <div className="text-center">
-                <p className="text-2xl font-bold">(555) 911-ELEC</p>
+                <p className="text-xl md:text-2xl font-bold">(555) 911-ELEC</p>
               </div>
             </div>
 
             {/* Follow Us */}
             <div>
-              <h5 className="font-semibold mb-3">Follow Us</h5>
+              <h5 className="font-semibold mb-2 md:mb-3 text-sm md:text-base">
+                Follow Us
+              </h5>
               <div className="flex space-x-3">
                 <a
                   href="#"
